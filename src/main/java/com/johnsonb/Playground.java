@@ -1,5 +1,8 @@
+package com.johnsonb;
+
 import java.util.Map;
 import java.util.HashMap;
+import java.io.Console;
 
 class Playground {
   public static void Playground() {
@@ -8,6 +11,12 @@ class Playground {
 
   public void hello() {
     System.out.println("Hello world!");
+  }
+
+  public void getUserFavoriteMovie() {
+    Console console = System.console();
+    String faveMovie = console.readLine("What is your favorite movie? ");
+    console.printf("Your favorite movie is %s", faveMovie);
   }
 
   public Map<String, String> myFavorites() {

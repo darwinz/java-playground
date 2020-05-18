@@ -1,0 +1,25 @@
+plugins {
+    id 'application'
+}
+
+version = '1.0.2'
+group = 'org.gradle.sample'
+
+sourceSets {
+  main {
+    java {
+      srcDir "src/main/java"
+        srcDir "src/test/java"
+    }
+    resources {
+      srcDir "src/main/resources"
+    }
+    resources {
+      srcDir "src/test/resources"
+    }
+  }
+}
+
+application {
+  mainClass = 'com.johnsonb.Main'
+}

@@ -1,5 +1,8 @@
+package com.johnsonb;
+
 import java.util.Map;
 import java.util.Iterator;
+import com.johnsonb.Playground;
 
 class Main {
   public static void main(String[] args) {
@@ -8,6 +11,7 @@ class Main {
 
     playground.hello();
     showMyFavorites(myFaves);
+    getUserFavoriteMovie();
   }
 
   private static void showMyFavorites(Map<String, String> favesList) {
@@ -18,5 +22,9 @@ class Main {
       System.out.println(pair.getKey() + " = " + pair.getValue());
       it.remove();
     }
+  }
+
+  private static void getUserFavoriteMovie() {
+    playground.getUserFavoriteMovie();
   }
 }
