@@ -5,6 +5,8 @@ import java.util.Iterator;
 import com.johnsonb.Playground;
 
 class Main {
+  private Playground playground;
+
   public static void main(String[] args) {
     Playground playground = new Playground();
     Map<String, String> myFaves = playground.myFavorites();
