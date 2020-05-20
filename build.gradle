@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+version = '0.0.1'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+mainClassName = 'com.johnsonb.Main'
+
+application {
+  mainModule = 'com.johnsonb'
+  mainClass = mainClassName
+}
+
+repositories {
+  jcenter()
+  mavenCentral()
+}
+
+dependencies {
+  testImplementation('junit:junit:4.13')
+}
+
+sourceSets {
+  main {
+    java {
+      srcDir "src/main/java"
+      srcDir "src/test/java"
+    }
+    resources {
+      srcDir "src/main/resources"
+    }
+    resources {
+      srcDir "src/test/resources"
+    }
+  }
+}
+
+task info {
+  doLast {
+    println version
+  }
+}
+
+task mainclass {
+  doLast {
+    println mainClassName
+  }
+}
+
