@@ -1,4 +1,4 @@
-package com.johnsonb;
+package com.johnsonb.favorites;
 
 import java.io.BufferedReader;
 import java.io.IOException;
