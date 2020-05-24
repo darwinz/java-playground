@@ -1,4 +1,4 @@
-package com.johnsonb;
+package com.johnsonb.favorites;
 
 import java.util.Map;
 import java.util.Iterator;

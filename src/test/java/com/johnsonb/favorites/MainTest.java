@@ -1,4 +1,4 @@
-package com.johnsonb;
+package com.johnsonb.favorites;
 
 import org.junit.Test;
 import org.junit.Before;
