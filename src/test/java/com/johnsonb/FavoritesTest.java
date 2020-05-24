@@ -6,18 +6,18 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
-public class PlaygroundTest {
+public class FavoritesTest {
 
-    private Playground playground;
+    private Favorites favorites;
 
     @Before
     public void setUp() {
-        playground = new Playground();
+        favorites = new Favorites();
     }
 
     @Test
     public void hello() {
-        playground.hello();
+        favorites.hello();
     }
 
     @Test
@@ -26,7 +26,7 @@ public class PlaygroundTest {
 
     @Test
     public void myFavoriteMovieReturnsValue() {
-        Map<String, String> favorites = playground.myFavorites();
-        assertEquals("Count of Monte Cristo", favorites.get("Movie"));
+        Map<String, String> favoritesMap = favorites.myFavorites();
+        assertEquals("Count of Monte Cristo", favoritesMap.get("Movie"));
     }
 }
