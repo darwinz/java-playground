@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 import static java.lang.System.out;
 
-class Playground {
+class Favorites {
   public void hello() {
     out.println("Hello world!");
   }

@@ -4,16 +4,16 @@ import java.util.Map;
 import java.util.Iterator;
 
 public class Main {
-  private static Playground playground;
+  private static Favorites favorites;
 
   /**
    * @param args
    */
   public static void main(String[] args) {
-    playground = new Playground();
-    Map<String, String> myFaves = playground.myFavorites();
+    favorites = new Favorites();
+    Map<String, String> myFaves = favorites.myFavorites();
 
-    playground.hello();
+    favorites.hello();
     showMyFavorites(myFaves);
     getUserFavoriteMovie();
   }
@@ -32,6 +32,6 @@ public class Main {
   }
 
   private static void getUserFavoriteMovie() {
-    playground.getUserFavoriteMovie();
+    favorites.getUserFavoriteMovie();
   }
 }
